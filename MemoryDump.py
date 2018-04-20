@@ -44,7 +44,7 @@ class MemoryDumpForm(idaapi.Form):
                 idaapi.warning("arrary is out of bound")
                 return -1
             if len <= 0:
-                idaapi.warning("len is <= zore")
+                idaapi.warning("len is <= 0")
                 return -1
             print("start read bytes")
             self.Close(0)
@@ -59,7 +59,7 @@ class MemoryDumpForm(idaapi.Form):
                 idaapi.warning("arrary is out of bound")
                 return -1
             if len <= 0:
-                idaapi.warning("len is <= zore")
+                idaapi.warning("len is <= 0")
                 return -1
             print("start read bytes")
             self.Close(0)
